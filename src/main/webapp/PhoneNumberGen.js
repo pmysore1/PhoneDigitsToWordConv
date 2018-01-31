@@ -66,12 +66,15 @@ $(document).ready(function() {
                         
                           $('#table_id').DataTable( {
                                 data: data.data,
+                                ordering: false,
+                                searching: false,
+                                //serverSide: true,
                                 destroy: true,
                                 columns: [                                   
                                     { data: "phoneNumber" }
                                 ]
                             } );
-
+                       
                 },
                
                 //If there was no resonse from the server

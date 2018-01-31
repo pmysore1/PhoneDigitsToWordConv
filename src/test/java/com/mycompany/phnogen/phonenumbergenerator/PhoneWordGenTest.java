@@ -73,7 +73,25 @@ public class PhoneWordGenTest {
         
         assertEquals("All phone digits with 1", result.size(), 4027);
     }
-
+     @Test
+    public void testForTenDigitsWith9() {
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+        PhoneNumberStore phoneNumberStore = new PhoneNumberStore() ;
+        ArrayList<String> result = (ArrayList<String>)phoneNumberStore.getAlphaNumericPhoneNoAll("3399978999") ;
+        
+        assertEquals("All phone digits with 1", result.size(), 655413);
+    }
+     @Test
+    public void test2ForTenDigitsWith9() {
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+        PhoneNumberStore phoneNumberStore = new PhoneNumberStore() ;
+        ArrayList<String> result = (ArrayList<String>)phoneNumberStore.getAlphaNumericPhoneNoAll("9924232345") ;
+        
+        assertEquals("All phone digits with 1", result.size(), 141089);
+    }
+    
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
