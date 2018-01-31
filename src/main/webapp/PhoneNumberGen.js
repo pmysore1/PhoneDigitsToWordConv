@@ -57,10 +57,7 @@ $(document).ready(function() {
                 dataType: "json",               
                 //if received a response from the server
                 success: function(data, textStatus, jqXHR) {
-                //success: function(data) {
-                    //our country code was correct so we have some information to display
-                    // if(data.success){
-                       //  $("#ajaxResponse").html("");
+              
                          $("#ajaxResponse").html("<b>Number of alpha numeric combination:</b> " + data.data.length + "<br/><br/>");
                          //$("#ajaxResponse").append("<b>Country Code:</b> " + data.phone_list + "<br/>");
                         
