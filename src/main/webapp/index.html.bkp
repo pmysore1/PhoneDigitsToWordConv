@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="PhoneNumberGen.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+    </head>
+   <body>
+	<div>Getting Started with AJAX using JAVA: Hello World!</div>
+        Phone Number: <input type = 'text' name = 'phonedigits' id="phonedigits" /> <br />
+        
+	<div id="hello"><button type="button" onclick="makeRequest()">Say Hello!</button></div>
+         <!--<form name = 'phoneform'>
+         
+        </form>-->
+         <form action="PhoneNumberGenServlet" id="phone_form">
+            <label>Phone Number </label>
+            <input type="text" name="phonenumber" />
+            <input type="submit" name="submit" value="Submit Form" />
+            
+        </form>
+        <div id="server-results"></div> 
+        
+    </body>
+</html>
